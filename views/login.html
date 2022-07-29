@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+        <link href="css/style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="container mt-4 py-3">
+            <div class="row">
+                <div class="col-3">
+                    <a href="/" class="btn btn-dark">Retour</a>
+                </div>
+                <div class="col-6">
+                    <form action="/login" method="post">
+                        <h3 class="text-primary">Se Connecter</h3>
+                        <div class="form-group">
+                            <label for="email">Email :</label>
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Merci de taper votre email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password :</label>
+                            <input type="password" name="password" id="password" class="form-control" placeholder="votre mot de passe">
+                        </div>
+                        <div>
+                            <input type="submit" value="Se connecter" class="btn btn-primary">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-3">
+                    <div>
+                        <h4>Si vous n' avez pas de compter veuillez en créer un </h4>
+                        <a href="/register" class="btn btn-link">S' inscrire</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+        <link href="css/style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="container mt-4 py-3 bg-warning">
+            <div class="row">
+                <div class="col-3">
+                    <a href="/" class="btn btn-dark">Retour</a>
+                </div>
+                <div class="col-6">
+                    <form action="/registerUserDatabase" method="post" id="registerForm">
+                        <h3 class="text-primary">ENREGISTRER UN UTILISATEUR</h3>
+                        <div class="form-group">
+                            <label for="nom">Nom :</label>
+                            <input type="text" name="nom_U" id="nom_U" class="form-control" placeholder="Merci de taper votre nom">
+                        </div>
+                        <!-- <div class="form-group">
+                            <label for="lastname">Prénoms :</label>
+                            <input type="text" name="lastname" id="lastname" class="form-control" placeholder="Merci de taper votre prenom">
+                        </div> -->
+                        <div class="form-group">
+                            <label for="email">Email :</label>
+                            <input type="email" name="email_U" id="email_U" class="form-control" placeholder="Merci de taper votre email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password :</label>
+                            <input type="password" name="mot_de_passe_U" id="password" class="form-control" placeholder="votre mot de passe">
+                        </div>
+                        <div class="form-group">
+                            <label for="dateNaissance">Date Naissance :</label>
+                            <input type="date" name="date_naissance_U" id="dateNaissance" class="form-control">
+                        </div>
+                        <!-- <div class="form-group">
+                            <label for="role">Role :</label>
+                            <select name="role" id="role" class="custom-select">
+                                <option value="Tuteur">Tuteur</option>
+                                <option value="Enfant">Enfant</option>
+                            </select>
+                        </div> -->
+                        <div class="form-group">
+                            <label for="sexe">Sexe :</label>
+                            <select name="sexe_U" id="sexe" class="custom-select">
+                                <option value="F">F</option>
+                                <option value="H">H</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="submit" value="Enregistrer" class="btn btn-primary">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-3">
+                    <div>
+                        <h4>Si vous avez déjà un compte cliquer ici </h4>
+                        <a href="/login" class="btn btn-link">Se connecter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/main.js"></script>
+</html>
